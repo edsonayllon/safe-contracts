@@ -1,9 +1,8 @@
 import { expect } from "chai";
-import hre, { deployments, waffle } from "hardhat";
+import { deployments, waffle } from "hardhat";
 import "@nomiclabs/hardhat-ethers";
 import { AddressZero } from "@ethersproject/constants";
 import { getSafeWithOwners, getSafeSingleton, migrationContract } from "../utils/setup";
-import { executeContractCallWithSigners } from "../utils/execution";
 
 describe("Migration", async () => {
 
